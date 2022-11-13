@@ -1,0 +1,12 @@
+ {vacation_top}
+    <main>
+                {exp:channel:entries channel="vacations"}
+                <article class="hilite">
+                    <h2>{title}</h2>
+                    <img src="{vacation_cover:prep}" alt="demo2">
+                    <p>{intro_blurb}</p>
+                    <div>{vacation_description}</div>
+                </article>
+                {/exp:channel:entries}
+    </main>
+    {vacation_bottom}
