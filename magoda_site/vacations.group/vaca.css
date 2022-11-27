@@ -1,0 +1,76 @@
+        /* This is where the magic happens! Notice the complex repeat function?
+       You can learn about that in the optional "10 Modern Layouts" video (11:40) 
+    */
+        .grid-container {
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+
+        /* Crazy how much more CSS it takes to layout the cards themselves! 
+       These use the "Line-up" technique in the "10 Modern Layouts" video (13:56 ) 
+    */
+        .card, .not-card {
+            border: 3px solid black;
+            border-radius: .5rem;
+            background: #eee;
+            color: #656565;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .not-card {
+            display: block;
+        }
+
+        /* All the CSS from here down is just making the cards themselves look pretty.
+       All of the hard layout stuff is in the two commented style rules above 
+    */
+
+        * {
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        body {
+            background: #333;
+            color: white;
+        }
+
+        .card h3, .not-card h3 {
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 1.5rem;
+            color: brown;
+            line-height: 1.4;
+        }
+
+        .card img, .not-card img {
+            width: 100%;
+            object-fit: cover;
+            padding: .5rem;
+            border: 1px solid #ccc;
+            background: white;
+            border-radius: .25rem;
+        }
+
+        .card p, .not-card p {
+            hyphens: auto;
+            padding: 0 1rem;
+            line-height: 1.22;
+        }
+
+        .card a, .not-card a {
+            display: block;
+            background: hsl(239, 48%, 48%);
+            font-weight: 500;
+            text-align: center;
+            padding: 1rem;
+            border-radius: .3rem;
+            color: white;
+            text-decoration: none;
+        }
+   
