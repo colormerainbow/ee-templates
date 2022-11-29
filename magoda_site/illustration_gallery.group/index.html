@@ -1,0 +1,62 @@
+ {pf_top}
+ <main>
+     <h1>Digital Illustration Gallery | {template_group}</h1>
+     <article class="intro">
+         <h3>Artistic Designs using Adobe Illustrator for different functional applications</h3>
+         </article>
+
+         <article class="gallery-grid tile-grid">
+
+            <!--
+         <div class="grid-container">
+             {exp:channel:entries channel="vacations"}
+             <section class="card">
+                 <h3>{title}</h3>
+                 <h4>{vacation_title}</h4>
+                 <img src="{vacation_cover}" alt="demo">
+                 <p>{intro_blurb}</p>
+                 <p><a href="{url_title_path='vacations/location'}">Book Now!</a></p>
+             </section>
+             {/exp:channel:entries}
+         </div>
+-->
+
+
+
+
+         <div class="illus-unit tile-unit-modal">
+            {exp:channel:entries channel="digital_illustration"}
+            <div class="content">
+                <img class="illus_img tile_img"
+                src="{pf_feature_image}"
+                    alt="feature image">
+              <label class="modal-open modal-label" for="modal-open">
+                     <p>{title}</p>
+                 </label>
+              <input type="radio" name="modal" value="open" id="modal-open" class="modal-radio">
+              <div class="modal">
+                <label class="modal-label overlay">
+                          <input type="radio" name="modal" value="close" class="modal-radio">
+                      </label>
+                <div class="content">
+                  <div class="top">
+                    <h2>{title}</h2>
+    
+                    <label class="modal-label close-btn">
+                              <input type="radio" name="modal" value="close" class="modal-radio">
+                          </label>
+                  </div>
+                  <a href="{url_title_path='illustration_gallery/details'}"><button type="button" class="cta button2">Read More</button></a>
+                  <p>{pf_excerpt}</p>
+                  <img class="img-pop" src="{pf_feature_image}" alt="feature image">
+                </div>
+              </div>
+            </div>
+            {/exp:channel:entries}
+          </div>
+
+
+
+     </article>
+ </main>
+{pf_bottom}

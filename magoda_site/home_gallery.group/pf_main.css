@@ -274,7 +274,18 @@ button {
   font-size: clamp(1rem, 3vw, var(--size-med));
   line-height: 1.5;
 }
-
+.specs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.tech {
+  border: solid black 1px;
+}
+.detail_pg {
+  display: flex;
+  flex-direction: column;
+}
 .tile_img {
   display: block;
   width: 100%;
