@@ -1,12 +1,35 @@
 {pf_top}
 
 <main>
-    <section>{exp:channel:entries channel="home"} {blurb} {/exp:channel:entries}</section>
 
-    <section class="feature">
-        <h2>Featured Project</h2>
-        {featured_project}
-    </section>
+    <article class="home-intro-msg intro">
+        <h1>Gallery Collections | {template_group}</h1>
+        <h3>Exhibits at the Gallery of Digital Arts</h3>
+    </article>
+
+    <article class="home-hero tile-grid">
+        {exp:channel:entries channel="home"} 
+
+        <section class="gallery-unit tile-unit">
+            <img class="home_img tile_img" src="
+            {pf_feature_image}{pf_feature_image:file}{/pf_feature_image}
+            " alt="gallery image">
+
+            <a href="{pf_content_type}_gallery"><button type="button" class="cta button1">{title}</button></a>
+
+            <p>{pf_excerpt}
+            </p>
+        </section>
+
+        {pf_feature_image}
+<img class="home_img tile_img" src="{pf_feature_image:file}" alt="gallery image">
+{/pf_feature_image}
+
+        {/exp:channel:entries}
+
+    </article>
 </main>
 
+
 {pf_bottom}
+
