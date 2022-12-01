@@ -8,7 +8,7 @@
     </article>
 
     <article class="home-hero tile-grid">
-        {exp:channel:entries channel="home"} 
+        {exp:channel:entries channel="home" status='open | featured'} 
 
         <section class="gallery-unit tile-unit">
             <img class="home_img tile_img" src="
@@ -21,9 +21,6 @@
             </p>
         </section>
 
-        {pf_feature_image}
-<img class="home_img tile_img" src="{pf_feature_image:file}" alt="gallery image">
-{/pf_feature_image}
 
         {/exp:channel:entries}
 

@@ -1,9 +1,9 @@
  {pf_top}
  <main>
-     <h1>Digital Illustration Gallery | {template_group}</h1>
-     <article class="intro">
-         <h3>Artistic Designs using Adobe Illustrator for different functional applications</h3>
-         </article>
+  <article class="intro">
+    <h1>Digital Illustration Gallery | {template_group}</h1>
+    <h3>Artistic Designs using Adobe Illustrator for different functional applications</h3>
+  </article>
 
          <article class="gallery-grid tile-grid">
 
@@ -21,11 +21,9 @@
          </div>
 -->
 
-
-
-
+{exp:channel:entries channel="digital_illustration"}
          <div class="illus-unit tile-unit-modal">
-            {exp:channel:entries channel="digital_illustration"}
+
             <div class="content">
                 <img class="illus_img tile_img"
                 src="{pf_feature_image}"
@@ -52,9 +50,9 @@
                 </div>
               </div>
             </div>
-            {/exp:channel:entries}
-          </div>
 
+          </div>
+          {/exp:channel:entries}
 
 
      </article>
