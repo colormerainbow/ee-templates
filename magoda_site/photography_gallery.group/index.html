@@ -1,0 +1,22 @@
+{pf_top}
+<main>
+ <article class="intro">
+   <h1>Photography Gallery | {template_group}</h1>
+   <h3>Exclusive collection of digital photography images and artistic mashups featuring use of Adobe Photoshop and Lightroom</h3>
+ </article>
+
+ <article class="gallery-grid tile-grid">
+   {exp:channel:entries channel="photography"}
+   <section class="tile-unit">
+
+     <img class="photo_img" src="{pf_image_cover:gallery_feature}" alt="photo image" style="width:100%">
+
+     <a href="{url_title_path='photography_gallery/details'}" target="_blank"><button type="button" class="cta button1">{title}</button></a>
+
+   </section>
+   {/exp:channel:entries}
+   </article>
+
+
+</main>
+{pf_bottom}

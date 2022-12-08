@@ -7,21 +7,20 @@
 
     <article class="gallery-grid tile-grid">
 
-            <!--
-         <div class="grid-container">
-             {exp:channel:entries channel="vacations"}
-             <section class="card">
-                 <h3>{title}</h3>
-                 <h4>{vacation_title}</h4>
-                 <img src="{vacation_cover}" alt="demo">
-                 <p>{intro_blurb}</p>
-                 <p><a href="{url_title_path='vacations/location'}">Book Now!</a></p>
-             </section>
-             {/exp:channel:entries}
-         </div>
--->
-
 {exp:channel:entries channel="digital_illustration"}
+
+
+<section class="tile-unit">
+
+  <img class="web_img" src="{pf_image_cover:gallery_feature}" alt="design image" style="width:100%">
+
+  <a href="{url_title_path='illustration_gallery/details'}" target="_blank"><button type="button" class="cta button1">{title}</button></a>
+
+</section>
+{/exp:channel:entries}
+</article>
+
+<!--
          <div class="illus-unit tile-unit-modal">
 
             <div class="content">
@@ -56,5 +55,6 @@
 
 
      </article>
+     -->
  </main>
 {pf_bottom}

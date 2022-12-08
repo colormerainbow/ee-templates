@@ -4,9 +4,11 @@
 {exp:channel:entries channel="webdesign"}
 <article class="detail_pg">
     <h2>{title}</h2>
-    <img src="{pf_feature_image}" alt="" title="" />
-    
+    <a href="{pf_demo_url}" target="_blank"><button type="button" class="cta button1">Visit Site</button></a>
     <p>{pf_excerpt}</p>
+
+    <img class="detail_img" src="{pf_image_cover}" alt="" title="" />
+
        
     <div class="specs">
         <div class="tech">
@@ -21,8 +23,6 @@
        
     <div>{pf_full_description}</div>
 
-
-    <a href="{pf_demo_url}" target="_blank"><button type="button" class="cta button1">Visit Site</button></a>
 
 </article>
 {/exp:channel:entries}
