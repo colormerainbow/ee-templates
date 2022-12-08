@@ -1,11 +1,29 @@
  {pf_top}
  <main>
+  <article class="intro">
     <h1>Web Design Gallery | {template_group}</h1>
-    <article class="intro">
-         <h3>Explore a sampling of custom-designed demo website implementations and treatments</h3>
+    <h3>Explore a sampling of custom-designed demo website implementations and treatments</h3>
+  </article>
+
+  <article class="gallery-grid tile-grid">
+    {exp:channel:entries channel="webdesign"}
+    <section class="tile-unit">
+
+      <img class="web_img" src="{pf_image_cover:gallery_feature}" alt="web demo image" style="width:100%">
+
+      <a href="{url_title_path='webdesign_gallery/details'}" target="_blank"><button type="button" class="cta button1">{title}</button></a>
+
+    </section>
+    {/exp:channel:entries}
     </article>
 
-    <article class="gallery-grid tile-grid">
+
+ </main>
+{pf_bottom}
+
+<!--
+
+      <article class="gallery-grid tile-grid">
 
     <section class="tile-unit">
       {exp:channel:entries channel="webdesign"}
@@ -16,7 +34,4 @@
     </section>
 
     </article>
-
-
- </main>
-{pf_bottom}
+-->
