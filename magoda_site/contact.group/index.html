@@ -1,0 +1,36 @@
+{pf_top} 
+
+<main class="grd">
+<br>
+<article>
+<section>
+{exp:channel:entries channel="contact"}
+  <h2>Contact Me</h2>
+  <p>{intro_blurb}</p>
+{/exp:channel:entries}
+</section>
+
+<section>
+	{exp:email:contact_form user_recipients="no" recipients="tbennett@dvc.edu" charset="utf-8" redirect="none" replyto="yes" return="{homepage}|Return to the Site"}
+    <h2>Message</h2>
+    <p>
+        <label for="from">Email:</label>
+        <input type="text" id="from" name="from" size="40" maxlength="35" placeholder="e.g. test@test.com" />
+    </p>
+    <p>
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" size="40" value="Hello from your website" />
+    </p>
+    <p>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="18" cols="40"></textarea>
+    </p>
+    <p>
+        <input name="submit" type='submit' value='Submit Form to Margaret' />
+    </p>
+{/exp:email:contact_form}
+</section>
+
+</article>
+</main>
+{pf_bottom}

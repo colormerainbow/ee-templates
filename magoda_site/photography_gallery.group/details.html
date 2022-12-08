@@ -1,27 +1,64 @@
 {pf_top}
-    <main>
-  
-{exp:channel:entries channel="photography"}
-<article class="detail_pg">
+<main>
+
+    {exp:channel:entries channel="photography"}
+    <article class="detail_pg">
+
+        <h2>{title}</h2>
+
+        <section class="photo-art">
+            <figure>
+                <img src="{pf_image_cover}" alt="my artwork" style="max-width:600px">
+                </a>
+                <figcaption>{title}</figcation>
+            </figure>
+
+            <div>
+                {if pf_compare_image}
+              
+                    {pf_compare_image}
+                    <figure>
+                        <!-- 
+                        <h4>{pf_compare_image:file_title}</h4>
+                    
+                    <a href="{project_images:file}" data-fancybox="images" data-caption="{pf_compare_image:excerpt_feature}">
+                        <img src="{pf_compare_image:file}" alt="" style="max-width:600px">
+                    </a>
+                    -->
+                        <img src="{pf_compare_image:file}" alt="" style="max-width:600px">
+                        <figcaption>{pf_compare_image:excerpt_feature}</figcation>
+                    </figure>
+                    {/pf_compare_image}
+               
+                {/if}
+            </div>
+        </section>
+
+        <div class="specs">
+
+            <div class="how-tech">
+                <div class="tech">
+                    <h3>Tech Stack:</h3>
+                    <div>{pf_tech_stack}</div>
+                </div>
+                <div class="tech">
+                    <h3>Skillset Demonstrated for this Design:</h3>
+                    <div>{pf_skillset}</div>
+                </div>
+            </div>
+
+            <div class="tech">
+                <h3>The Process:</h3>
+                <div>{pf_full_description}</div>
+            </div>
+        </div>
+
+        <!-- future expansion: if condition for more images - then show thumbnails of wip images and describe design process using a file grid-->
     
-    <h2>{title}</h2>
-    <img src="{pf_image_cover}" alt="" title="" />
 
-    <h3>Tech Stack:</h3>
-    <div>{pf_tech_stack}</div>
-
-    <h3>Skillset Demonstrated for this Design:</h3>
-    <div>{pf_skillset}</div>
-    
-       <h3>The Process:</h3>
-       <div>{pf_full_description}</div>
-
-       <!-- future expansion: if condition for more images - then show thumbnails of wip images and describe design process using pf_feature_image file grid-->
-
-</article>
-{/exp:channel:entries}
+    </article>
+    {/exp:channel:entries}
 
 
-    </main>
-    {pf_bottom}
- 
+</main>
+{pf_bottom}

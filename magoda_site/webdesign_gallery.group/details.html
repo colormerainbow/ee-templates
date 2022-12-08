@@ -7,22 +7,31 @@
     <a href="{pf_demo_url}" target="_blank"><button type="button" class="cta button1">Visit Site</button></a>
     <p>{pf_excerpt}</p>
 
-    <img class="detail_img" src="{pf_image_cover}" alt="" title="" />
 
-       
+    <section class="web-art">
+        <figure>
+            <img class="detail_img" src="{pf_image_cover}" alt="my website" style="max-width:800px">
+            </a>
+            <figcaption>{title}</figcation>
+        </figure>
+
     <div class="specs">
-        <div class="tech">
-            <h3>Tech Stack:</h3>
-            <p>{pf_tech_stack}</p>
+        <div class="how-tech">
+            <div class="tech">
+                <h3>Tech Stack:</h3>
+                <div>{pf_tech_stack}</div>
+            </div>
+            <div class="tech">
+                <h3>Skillset:</h3>
+                <div>{pf_skillset}</div>
+            </div>
         </div>
+
         <div class="tech">
-            <h3>Skillset:</h3>
-            <p>{pf_skillset}</p>
+            <h3>The Process:</h3>
+            <div>{pf_full_description}</div>
         </div>
     </div>
-       
-    <div>{pf_full_description}</div>
-
 
 </article>
 {/exp:channel:entries}
