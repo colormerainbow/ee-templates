@@ -15,23 +15,14 @@
 
             <div>
                 {if pf_compare_image}
-              
-                    {pf_compare_image}
-                    <figure>
-                        <!-- 
-                        <h4>{pf_compare_image:file_title}</h4>
-                    
-                    <a href="{project_images:file}" data-fancybox="images" data-caption="{pf_compare_image:excerpt_feature}">
-                        <img src="{pf_compare_image:file}" alt="" style="max-width:600px">
-                    </a>
 
-                    style="max-width:600px
-                    -->
-                        <img src="{pf_compare_image:file}" alt="" style="max-width:600px">
-                        <figcaption>{pf_compare_image:excerpt_feature}</figcation>
-                    </figure>
-                    {/pf_compare_image}
-               
+                {pf_compare_image}
+                <figure>
+                    <img src="{pf_compare_image:file:websmall}" alt="original inspiration">
+                    <figcaption>{pf_compare_image:excerpt_feature}</figcation>
+                </figure>
+                {/pf_compare_image}
+
                 {/if}
             </div>
         </section>
@@ -56,7 +47,7 @@
         </div>
 
         <!-- future expansion: if condition for more images - then show thumbnails of wip images and describe design process using a file grid-->
-    
+
 
     </article>
     {/exp:channel:entries}

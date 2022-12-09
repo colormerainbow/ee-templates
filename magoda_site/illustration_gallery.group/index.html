@@ -1,60 +1,25 @@
  {pf_top}
  <main>
-  <article class="intro">
-    <h1>Digital Illustration Gallery | {template_group}</h1>
-    <h3>Artistic Designs using Adobe Illustrator for different functional applications</h3>
-  </article>
+   <article class="intro">
+     <h1>Digital Illustration Gallery | {template_group}</h1>
+     <h3>Artistic Designs using Adobe Illustrator for different functional applications</h3>
+   </article>
 
-    <article class="gallery-grid tile-grid">
+   <article class="gallery-grid tile-grid">
 
-{exp:channel:entries channel="digital_illustration"}
-
-
-<section class="tile-unit">
-
-  <img class="web_img" src="{pf_image_cover:thumbs}" alt="design image" style="width:100%">
-
-  <a href="{url_title_path='illustration_gallery/details'}" target="_blank"><button type="button" class="cta button1">{title}</button></a>
-
-</section>
-{/exp:channel:entries}
-</article>
-
-<!--
-         <div class="illus-unit tile-unit-modal">
-
-            <div class="content">
-                <img class="illus_img tile_img"
-                src="{pf_image_cover}"
-                    alt="design image">
-              <label class="modal-open modal-label" for="modal-open">
-                     <p>{title}</p>
-                 </label>
-              <input type="radio" name="modal" value="open" id="modal-open" class="modal-radio">
-              <div class="modal">
-                <label class="modal-label overlay">
-                          <input type="radio" name="modal" value="close" class="modal-radio">
-                      </label>
-                <div class="content">
-                  <div class="top">
-                    <h2>{title}</h2>
-    
-                    <label class="modal-label close-btn">
-                              <input type="radio" name="modal" value="close" class="modal-radio">
-                          </label>
-                  </div>
-                  <a href="{url_title_path='illustration_gallery/details'}"><button type="button" class="cta button2">Learn More</button></a>
-                  <p>{pf_excerpt}</p>
-                  <img class="img-pop" src="{pf_image_cover}" alt="design image">
-                </div>
-              </div>
-            </div>
-
-          </div>
-          {/exp:channel:entries}
+     {exp:channel:entries channel="digital_illustration"}
 
 
-     </article>
-     -->
+     <section class="tile-unit">
+
+       <img class="web_img" src="{pf_image_cover:thumbs}" alt="design image" style="width:100%">
+
+       <a href="{url_title_path='illustration_gallery/details'}" target="_blank"><button type="button"
+           class="cta button1">{title}</button></a>
+
+     </section>
+     {/exp:channel:entries}
+   </article>
+
  </main>
-{pf_bottom}
+ {pf_bottom}

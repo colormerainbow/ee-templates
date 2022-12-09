@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,34 +20,33 @@
 <body id="{template_group}">
     <header class="main-header">
 
-   {exp:channel:entries channel="head" status='open | featured'} 
+        {exp:channel:entries channel="head" status='open | featured'}
 
-      <a id="menu-btn" href="#"><img id="burger" src="{hamburger}" alt="menu burger icon" width="60"
-              height="100"></a>
-  
-      <a href="index.html"><img class="logo" src="{site_logo}" alt="MAGODA Logo" width="150"
-              height="150"></a>    
-    
-  
-      <nav class="main-nav show">
-        <ul>
-          <li>
-              <a href="{homepage}/#">
-                  <img id="x-burger" src="{close_menu}" alt="close menu burger icon" width="30" height="30">
-              </a>
-          </li>
-          <li><a class="home-pg" href="{homepage}/home_gallery">Home</a></li>
-          <li><a class="web-pg" href="{homepage}/webdesign_gallery">Web Designs</a></li>
-          <li><a class="photo-pg" href="{homepage}/photography_gallery">Photography</a></li>
-          <li><a class="illus-pg" href="{homepage}/illustration_gallery">Illustrations</a></li>
-          <li>
-            <a class="about-pg" href="{homepage}/about"> About </a>
-            </li>
-            <li>
-                <a class="contact-pg" href="{homepage}/contact"> Contact </a>
-            </li>
-      </ul>
-      </nav>
+        <a id="menu-btn" href="#"><img id="burger" src="{hamburger:icon}" alt="menu burger icon" width="30"
+                height="30"></a>
 
-      {/exp:channel:entries}     
-  </header>
+        <a href="{homepage}/home_gallery"><img class="logo" src="{site_logo:icon}" alt="MAGODA Logo"></a>
+
+
+        <nav class="main-nav show">
+            <ul>
+                <li>
+                    <a href="{homepage}/#">
+                        <img id="x-burger" src="{close_menu:icon}" alt="close menu burger icon" width="30" height="30">
+                    </a>
+                </li>
+                <li><a class="home-pg" href="{homepage}/home_gallery">Home</a></li>
+                <li><a class="web-pg" href="{homepage}/webdesign_gallery">Web Designs</a></li>
+                <li><a class="photo-pg" href="{homepage}/photography_gallery">Photography</a></li>
+                <li><a class="illus-pg" href="{homepage}/illustration_gallery">Illustrations</a></li>
+                <li>
+                    <a class="about-pg" href="{homepage}/about"> About </a>
+                </li>
+                <li>
+                    <a class="contact-pg" href="{homepage}/contact"> Contact </a>
+                </li>
+            </ul>
+        </nav>
+
+        {/exp:channel:entries}
+    </header>

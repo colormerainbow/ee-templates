@@ -1,47 +1,45 @@
 {pf_top}
-    <main>
-  
-{exp:channel:entries channel="digital_illustration"}
-<article class="detail_pg">
-    
-    <h2>{title}</h2>
+<main>
 
-    <section class="illus-art">
-        <figure>
-            <img src="{pf_image_cover:webready}" alt="my artwork">
-            </a>
-            <figcaption>{title}</figcation>
-        </figure>
+    {exp:channel:entries channel="digital_illustration"}
+    <article class="detail_pg">
 
-<!-- style="max-width:800px
-    future expansion: if condition for more images - then show thumbnails of other images and describe alt design patterns or process using pf_feature_image file grid-->
+        <h2>{title}</h2>
+
+        <section class="illus-art">
+            <figure>
+                <img src="{pf_image_cover:webready}" alt="my artwork">
+                </a>
+                <figcaption>{title}</figcation>
+            </figure>
+
+            <!--future expansion: if condition for more images - then show thumbnails of other images and describe alt design patterns or process using pf_feature_image file grid-->
 
         </section>
 
-       <div class="specs">
+        <div class="specs">
 
-        <div class="how-tech">
-            <div class="tech">
-                <h3>Tech Stack:</h3>
-                <div>{pf_tech_stack}</div>
+            <div class="how-tech">
+                <div class="tech">
+                    <h3>Tech Stack:</h3>
+                    <div>{pf_tech_stack}</div>
+                </div>
+                <div class="tech">
+                    <h3>Skillset Demonstrated for this Design:</h3>
+                    <div>{pf_skillset}</div>
+                </div>
             </div>
+
             <div class="tech">
-                <h3>Skillset Demonstrated for this Design:</h3>
-                <div>{pf_skillset}</div>
+                <h3>The Process:</h3>
+                <div>{pf_full_description}</div>
             </div>
         </div>
 
-        <div class="tech">
-            <h3>The Process:</h3>
-            <div>{pf_full_description}</div>
-        </div>
-    </div>
+
+    </article>
+    {/exp:channel:entries}
 
 
-</article>
-{/exp:channel:entries}
-
-
-    </main>
-    {pf_bottom}
- 
+</main>
+{pf_bottom}
