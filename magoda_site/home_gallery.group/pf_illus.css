@@ -121,15 +121,12 @@ main {
     top: 10%;
     left: 5%;
     background: #fff;
-  //  color: #000000;
     border-radius: 15px;
     box-shadow: 0 3px 15px -2px #222;
     padding: 20px;
   }
   
-  .content p {
-  //  color: pink;
-  }
+
   .close-btn {
     position: absolute;
     width: 30px;
